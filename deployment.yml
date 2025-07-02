@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: nawreslakhal/deployment:backend
+          image: nawreslakhal/k8s-deployment:backend
           ports:
             - containerPort: 8080
           env:
@@ -45,6 +45,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: nawreslakhal/deployment:frontend
+          image: nawreslakhal/k8s-deployment:frontend
           ports:
             - containerPort: 80
